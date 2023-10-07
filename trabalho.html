@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .services-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border: 2px solid #000;
+            font-size: 16px;
+        }
+
+        .services-table th,
+        .services-table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #000;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-links-container">
+        <a href="pagina_inicial.html" class="nav__link">
+            <span class="nav__text">Pagina Inicial</span>
+            <ion-icon name="home" size="large"></ion-icon>
+        </a>
+        <a href="portifolio.html" class="nav__link">
+            <span class="nav__text">Portfólio</span>
+            <ion-icon name="book-outline" size="large"></ion-icon>
+        </a>
+        <a href="trabalho.html" class="nav__link">
+            <span class="nav__text">Trabalhe comigo</span>
+            <ion-icon name="accessibility-outline" size="large"></ion-icon>
+        </a>
+        <a href="formulario.html" class="nav__link">
+            <span class="nav__text">Entre em contato</span>
+            <ion-icon name="call-outline" size="large"></ion-icon>
+        </a>
+        <a href="caminho_para_seu_curriculo.pdf" target="_blank" class="nav__link">
+            <span class="nav__text">Meu Currículo</span>
+            <ion-icon name="document-outline" size="large"></ion-icon>
+        </a>
+        <a href="https://github.com/seu_nome_de_usuario_no_github" target="_blank" class="nav__link">
+            <span class="nav__text">Meu GitHub</span>
+            <ion-icon name="logo-github" size="large"></ion-icon>
+        </a>
+    </div>
+
+    <header>
+        <h1 class="title" align="center">Tabela de Serviços</h1>
+    </header>
+
+
+    <div class="background"></div>
+
+    <div class="container">
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Desenvolvimento de HomePage</td>
+                    <td>Desenvolvimento de uma página inicial estática em HTML e CSS.</td>
+                    <td>R$ 500,00</td>
+                </tr>
+                <tr>
+                    <td>Desenvolvimento de Página Estática</td>
+                    <td>Desenvolvimento de uma página estática em HTML e CSS.</td>
+                    <td>R$ 300,00</td>
+                </tr>
+                <tr>
+                    <td>Desenvolvimento de Página Dinâmica</td>
+                    <td>Desenvolvimento de uma página com interatividade em HTML, CSS e JavaScript.</td>
+                    <td>R$ 800,00</td>
+                </tr>
+                <tr>
+                    <td>Desenvolvimento de Página Super Avançada</td>
+                    <td>Desenvolvimento de uma página altamente complexa com recursos avançados.</td>
+                    <td>Preço sob consulta</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function toggleNav() {
+            document.body.classList.toggle("nav-open");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

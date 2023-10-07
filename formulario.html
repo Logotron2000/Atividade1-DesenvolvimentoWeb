@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav-links-container">
+        <a href="pagina_inicial.html" class="nav__link">
+            <span class="nav__text">Pagina Inicial</span>
+            <ion-icon name="home" size="large"></ion-icon>
+        </a>
+        <a href="portifolio.html" class="nav__link">
+            <span class="nav__text">Portfólio</span>
+            <ion-icon name="book-outline" size="large"></ion-icon>
+        </a>
+        <a href="trabalho.html" class="nav__link">
+            <span class="nav__text">Trabalhe comigo</span>
+            <ion-icon name="accessibility-outline" size="large"></ion-icon>
+        </a>
+        <a href="formulario.html" class="nav__link">
+            <span class="nav__text">Entre em contato</span>
+            <ion-icon name="call-outline" size="large"></ion-icon>
+        </a>
+        <a href="Meu curriculo_1 (3).pdf" target="_blank" class="nav__link">
+            <span class="nav__text">Meu Currículo</span>
+            <ion-icon name="document-outline" size="large"></ion-icon>
+        </a>
+        <a href="https://github.com/Logotron2000?tab=repositories" target="_blank" class="nav__link">
+            <span class="nav__text">Meu GitHub</span>
+            <ion-icon name="logo-github" size="large"></ion-icon>
+        </a>
+    </div>
+
+    <header>
+        <h1 class="title" align="center">Formulário de Contato</h1>
+    </header>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <form action="#" method="post" id="contact-form">
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="tipo">Pessoa Física ou Jurídica:</label><br>
+            <select id="tipo" name="tipo" required>
+                <option value="pessoa-fisica">Pessoa Física</option>
+                <option value="pessoa-juridica">Pessoa Jurídica</option>
+            </select><br><br>
+
+            <label for="horario">Melhor Horário de Contato:</label><br>
+            <input type="text" id="horario" name="horario" required><br><br>
+
+            <label for="servico">Tipo de Serviço Desejado:</label><br>
+            <input type="text" id="servico" name="servico" required><br><br>
+
+            <label for="descricao">Breve Descrição:</label><br>
+            <textarea id="descricao" name="descricao" rows="4" required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function toggleNav() {
+            document.body.classList.toggle("nav-open");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

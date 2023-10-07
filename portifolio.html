@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav-links-container">
+        <a href="pagina_inicial.html" class="nav__link">
+            <span class="nav__text">Pagina Inicial</span>
+            <ion-icon name="home" size="large"></ion-icon>
+        </a>
+        <a href="portifolio.html" class="nav__link">
+            <span class="nav__text">Portfólio</span>
+            <ion-icon name="book-outline" size="large"></ion-icon>
+        </a>
+        <a href="trabalho.html" class="nav__link">
+            <span class="nav__text">Trabalhe comigo</span>
+            <ion-icon name="accessibility-outline" size="large"></ion-icon>
+        </a>
+        <a href="formulario.html" class="nav__link">
+            <span class="nav__text">Entre em contato</span>
+            <ion-icon name="call-outline" size="large"></ion-icon>
+        </a>
+        <a href="Meu curriculo_1 (3).pdf" target="_blank" class="nav__link">
+            <span class="nav__text">Meu Currículo</span>
+            <ion-icon name="document-outline" size="large"></ion-icon>
+        </a>
+        <a href="https://github.com/Logotron2000?tab=repositories" target="_blank" class="nav__link">
+            <span class="nav__text">Meu GitHub</span>
+            <ion-icon name="logo-github" size="large"></ion-icon>
+        </a>
+    </div>
+    
+
+    <header>
+        <h1 class="title" align="center">Meu Portfólio</h1>
+    </header>
+
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="project">
+            <h2>Projeto 1 - Website da Empresa GetResponse</h2>
+            <p>Detalhes: 
+                <ul>
+                    <li>Cliente: Empresa Empresa GetResponse</li>
+                    <li>Tecnologias: HTML, CSS, JavaScript</li>
+                    <li>Ano: 2022</li>
+                    <img src="land1.jpg" align="center">
+                </ul>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Projeto 2 - Redesign do E-commerce Slack</h2>
+            <p>Detalhes: 
+                <ul>
+                    <li>Cliente: Empresa Slack</li>
+                    <li>Tecnologias: HTML, CSS, JavaScript, PHP</li>
+                    <li>Ano: 2021</li>
+                    <img src="land2.jpg" align="center">
+                </ul>
+            </p>
+        </div>
+
+        <div class="project">
+            <h2>Projeto 3 - Blog da Marca XYZ</h2>
+            <p>Detalhes: 
+                <ul>
+                    <li>Cliente: Marca XYZ</li>
+                    <li>Tecnologias: HTML, CSS, JavaScript, PHP</li>
+                    <li>Ano: 2020</li>
+                    <img src="land3.jpg" align="center">
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            document.body.classList.toggle("nav-open");
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
